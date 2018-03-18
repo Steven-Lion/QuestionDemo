@@ -1,0 +1,19 @@
+<HTML>
+<h1>
+   I am home.html
+</h1>
+<p>hello the world:<#list colors as x>
+   ${x}
+</#list></p>
+<p>
+   <#list map?keys as Key>
+       key:  ${Key}
+       value :  ${map[Key]}
+   </#list>
+
+    <!--引入hander.html-->
+    #parse("hander.html")
+</p>
+
+
+</HTML>
